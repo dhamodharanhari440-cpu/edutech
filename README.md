@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EduGenie — AI-Powered Learning Assistant
 
 EduGenie is a full-stack, AI-powered educational web application built with
@@ -267,3 +268,6 @@ curl -X POST http://127.0.0.1:8000/api/qa \
 - [x] `requirements.txt` contains every package actually imported by the code
 - [x] `static/` and `templates/` paths match what `main.py` mounts
 - [x] Errors never expose Python tracebacks to the browser
+=======
+# edutech
+>>>>>>> 6ec5736370cf46d3f4fdea0df421bab01b845898
