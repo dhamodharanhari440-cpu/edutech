@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>EduGenie - AI Learning Assistant</title>
+<link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">🧠</span>
+        <span class="logo-text">EduGenie</span>
+      </div>
+      <span class="tagline">AI Learning Assistant</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Learn Smarter with AI</h1>
+    <p>Ask questions, understand concepts, generate quizzes and build personalized learning paths.</p>
+  </section>
+
+  <main class="container">
+
+    <section class="feature-grid" id="feature-grid">
+      <button class="feature-card" data-feature="qa">
+        <span class="feature-icon">💬</span>
+        <span class="feature-title">Ask Question</span>
+        <span class="feature-desc">Get clear answers to academic or general questions</span>
+      </button>
+      <button class="feature-card" data-feature="explain">
+        <span class="feature-icon">💡</span>
+        <span class="feature-title">Explain Topic</span>
+        <span class="feature-desc">Break down difficult concepts step by step</span>
+      </button>
+      <button class="feature-card" data-feature="quiz">
+        <span class="feature-icon">📝</span>
+        <span class="feature-title">Generate Quiz</span>
+        <span class="feature-desc">Test yourself with 5 AI-generated MCQs</span>
+      </button>
+      <button class="feature-card" data-feature="summarize">
+        <span class="feature-icon">📄</span>
+        <span class="feature-title">Summarize Text</span>
+        <span class="feature-desc">Turn long passages into short, clear summaries</span>
+      </button>
+      <button class="feature-card" data-feature="learn">
+        <span class="feature-icon">🗺️</span>
+        <span class="feature-title">Learning Path</span>
+        <span class="feature-desc">Get a personalized roadmap for any topic</span>
+      </button>
+    </section>
+
+    <!-- Dynamic input panel -->
+    <section class="panel hidden" id="input-panel">
+      <div class="panel-header">
+        <h2 id="panel-title">Feature</h2>
+        <button class="close-btn" id="close-panel" aria-label="Close">&times;</button>
+      </div>
+
+      <div id="panel-body">
+        <label id="input-label" for="main-input">Input</label>
+        <textarea id="main-input" rows="5" placeholder="Type here..."></textarea>
+        <button id="submit-btn" class="primary-btn">Submit</button>
+      </div>
+
+      <div id="loading-indicator" class="loading hidden">
+        <div class="spinner"></div>
+        <span id="loading-text">EduGenie is thinking...</span>
+      </div>
+
+      <div id="error-box" class="error-box hidden"></div>
+
+      <!-- Generic text-result area (Q&A, Explain, Summarize, Learning Path) -->
+      <div id="result-card" class="result-card hidden">
+        <h3 id="result-title">Result</h3>
+        <div id="result-content" class="result-content"></div>
+      </div>
+
+      <!-- Quiz-specific interactive area -->
+      <div id="quiz-area" class="quiz-area hidden"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>EduGenie &middot; AI Learning Assistant &middot; Powered by Google Gemini</p>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
